@@ -1,5 +1,10 @@
-recipe_file = ARGV.first
+def main
+  puts recipe
+end
 
-recipe = File.read(recipe_file)
+def recipe
+  recipe_file = ARGV.first
+  File.read(recipe_file)
+end
 
-puts recipe
+main
