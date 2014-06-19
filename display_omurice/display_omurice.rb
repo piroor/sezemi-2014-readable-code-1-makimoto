@@ -1,3 +1,5 @@
-data = File.read(ARGV.first)
+recipe_file = ARGV.first
 
-puts data
+recipe = File.read(recipe_file)
+
+puts recipe
