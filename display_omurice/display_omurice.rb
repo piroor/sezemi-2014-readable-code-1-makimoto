@@ -1,10 +1,10 @@
 def main
-  recipe.each_line do |one_recipe|
-    puts one_recipe
+  recipes.each_line do |recipe|
+    puts recipe
   end
 end
 
-def recipe
+def recipes
   recipe_file = ARGV.first
   File.read(recipe_file)
 end
