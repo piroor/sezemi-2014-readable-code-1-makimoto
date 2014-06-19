@@ -1,5 +1,7 @@
 def main
-  puts recipe
+  recipe.each_line do |one_recipe|
+    puts one_recipe
+  end
 end
 
 def recipe
